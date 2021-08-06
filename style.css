@@ -125,7 +125,7 @@ p {
 /* Home */
 #home {
   background: url("images/home-background-img.png") center/cover no-repeat;
-  padding: 60px;
+  padding: 100px;
   text-align: center;
 }
 .home__contact {
@@ -216,7 +216,4 @@ p {
   flex-basis: 30%;
   background-color: var(--color-brown);
   padding: 20px;
-}
-.skillset__certificate__item {
-  margin-bottom: 16px;
 }
