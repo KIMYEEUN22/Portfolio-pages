@@ -217,3 +217,51 @@ p {
   background-color: var(--color-brown);
   padding: 20px;
 }
+
+/* Works */
+
+.work__catogories {
+  margin: 40px;
+}
+
+.category__btn {
+  border: 1px solid #7d766a;
+  border-radius: var(--size-border-radius);
+  font-size: var(--font-regular);
+  padding: 8px 48px;
+}
+
+.category__btn.active,
+.category__btn:hover {
+  background-color: var(--color-salmon);
+}
+
+.category__btn.active .category__count,
+.category__btn:hover .category__count {
+  opacity: 1;
+  top: 0;
+}
+
+.category__count {
+  background-color: var(--color-yellow);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  line-height: 24px;
+  position: relative;
+  top: -20px;
+  left: 4px;
+  opacity: 0;
+  transition: all 300ms ease-in;
+}
+
+.work__projects {
+  border: 1px solid lightgrey;
+  box-shadow: 3px 3px 5px 0px rgba(99, 99, 99, 0.52);
+  border-radius: var(--size-border-radius);
+}
+
+.projects__box {
+  display: flex;
+}
