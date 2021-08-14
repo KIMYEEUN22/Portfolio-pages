@@ -262,6 +262,39 @@ p {
   border-radius: var(--size-border-radius);
 }
 
+.projects__detail {
+  padding: 20px 50px;
+  text-align: initial;
+}
+
 .projects__box {
   display: flex;
+  margin-top: 30px;
+}
+
+.projects__video {
+  margin: 20px;
+  border: 1px solid lightgray;
+}
+
+.projects__stack {
+  display: flex;
+  margin-top: 15px;
+}
+
+.stack__list {
+  padding: 0 10px;
+}
+.projects__description {
+  margin-bottom: 30px;
+}
+
+.stack__name {
+  flex: 1;
+  font-weight: var(--weight-semi-bold);
+  margin-right: 10px;
+}
+
+.stack__description {
+  flex: 8;
 }
