@@ -126,6 +126,14 @@ p {
   background-color: var(--color-dark-salmon);
 }
 
+.navbar__toggle-btn {
+  display: none;
+  position: absolute;
+  top: 22px;
+  right: 32px;
+  font-size: 24px;
+}
+
 /* Home */
 #home {
   background: url("images/home-background-img.png") center/cover no-repeat;
@@ -277,6 +285,7 @@ p {
 }
 
 .projects__video {
+  width: 500px;
   margin: 20px;
   border: 1px solid lightgray;
 }
@@ -294,13 +303,13 @@ p {
 }
 
 .stack__name {
-  flex: 1;
+  flex: 2;
   font-weight: var(--weight-semi-bold);
   margin-right: 10px;
 }
 
 .stack__description {
-  flex: 8;
+  flex: 9;
 }
 
 /* Contact */
@@ -320,4 +329,41 @@ p {
 
 .contact__address {
   font-weight: var(--weight-semi-bold);
+}
+
+/* For below 768px screen width */
+@media screen and (max-width: 1052px) {
+  .projects__box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .about__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects__video {
+    width: 350px;
+  }
+
+  .skillset {
+    flex-direction: column;
+  }
 }
