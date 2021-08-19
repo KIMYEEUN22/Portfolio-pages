@@ -144,8 +144,9 @@ p {
 /* Home */
 #home {
   background: url("images/home-background-img.png") center/cover no-repeat;
+  height: 580px;
   padding: 100px;
-  padding-top: 120px;
+  padding-top: 150px;
   text-align: center;
 }
 .home__contact {
